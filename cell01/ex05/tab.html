@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tab tab tab</title>
+    <style>
+      body {
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            margin-top: 0px;
+        }
+        .border-box {
+            position: relative;
+            display: flex; 
+            width: 100%; 
+            height: 300px; 
+            border: 2px solid black;
+            margin-top: 0px;
+        }
+        .left-half {
+            flex: 1;
+            background-color: lightblue;
+            opacity: 80%;
+        }
+        .right-half {
+            flex: 1;
+            background-color: lightcoral;
+            opacity: 80%;
+        }
+        .center-line {
+            position: absolute; 
+            left: 50%; 
+            top: 0;
+            width: 2px; 
+            height: 100%;
+            background-color: rgb(120, 120, 120); 
+            z-index: 1; 
+        }
+        .a {
+            text-align: left;
+            padding-top: 120px;
+        }
+    </style>
+</head>
+<body>
+    <div class="hr">
+        <hr>
+    </div>
+
+    <div class="border-box">
+        <div class="left-half">
+            <div class="a">
+                <p>
+                    Moodeng
+                </p>
+            </div>
+        </div>
+        <div class="right-half">
+            <div class="a">
+                <p>
+                    Moodeng
+                </p>
+            </div>
+        </div>
+        <div class="center-line"></div>
+    </div>
+
+</body>
+</html>
