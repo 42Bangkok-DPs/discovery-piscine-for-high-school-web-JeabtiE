@@ -1,0 +1,9 @@
+body {
+    background-color: #ff9578;
+    line-height: 1.6;
+  }
+.button {
+    padding: 10px 20px;
+    align-items: center;
+    font-size: 16px;
+}
