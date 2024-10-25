@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  background-image: url('wall2.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.glass-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.glass-box-wrapper {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  width: 70%; 
+  margin: 0 auto; 
+  gap: 40px; 
+}
+
+/* Glass Box Styling */
+.glass-box {
+  background: rgba(255, 255, 255, 0.2); 
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px); 
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  width: 500px; 
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease; /* Animation */
+} 
+.glass-box:hover{
+  transform: scale(1.1); /* Scale up the image on hover */
+
+}
+
+/* Image Styling */
+.glass-box img {
+  max-width: 100%; 
+  border-radius: 10px;
+  margin-bottom: 20px; 
+}
+
+/* Glass Button Styling */
+.glass-button {
+  background: rgba(255, 255, 255, 0.2); 
+  backdrop-filter: blur(10px); 
+  border: 1px solid rgba(255, 255, 255, 0.3); 
+  border-radius: 10px;
+  color: #fff; 
+  padding: 10px 20px; 
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease; 
+  text-shadow: #000000;
+}
+
+/* Button Hover Effect */
+.glass-button:hover {
+  background: rgba(255, 255, 255, 0.3); 
+  box-shadow: 0 6px 10px rgba(255, 255, 255, 0.3); 
+  transform: translateY(-5px); 
+}
+
+/* Button Active State */
+.glass-button:active {
+  transform: scale(0.95); 
+}
+
+.navbar {
+  background-image: linear-gradient(to right, #84fab0 0%, #daff9d 51%, #84fab0 100%);
+  color: white;
+  position: fixed; 
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  padding: 15px;
+  padding-bottom: 40px;
+  z-index: 1000;
+}
+.text{
+  font-weight: bold;
+  font-size: 26px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 40px;
+}
+.logo {
+  padding-bottom: 40px;
+  position: absolute; 
+  left: 5px;
+  padding-top: 65px;
+}
